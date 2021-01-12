@@ -11,5 +11,3 @@ export default class ServerSideMqtt {
     console.log(this.host, this.port);
   }
 }
-
-module.exports = ServerSideMqtt;
