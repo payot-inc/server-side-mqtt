@@ -19,8 +19,8 @@ var ServerSideMqtt = /*#__PURE__*/function () {
   function ServerSideMqtt(host, port) {
     _classCallCheck(this, ServerSideMqtt);
 
-    this.host = this.host;
-    this.port = this.port;
+    this.host = host;
+    this.port = port;
     this.client = _mqtt["default"].connect("mqtt://".concat(host, ":").concat(port));
   }
 
@@ -35,4 +35,4 @@ var ServerSideMqtt = /*#__PURE__*/function () {
 }();
 
 exports["default"] = ServerSideMqtt;
-new ServerSideMqtt('test', 123).test();
+module.exports = ServerSideMqtt;
