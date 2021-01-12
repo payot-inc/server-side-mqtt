@@ -35,3 +35,4 @@ var ServerSideMqtt = /*#__PURE__*/function () {
 }();
 
 exports["default"] = ServerSideMqtt;
+new ServerSideMqtt('test', 123).test();
