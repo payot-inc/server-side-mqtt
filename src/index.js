@@ -2,8 +2,8 @@ import MQTT from 'mqtt';
 
 export default class ServerSideMqtt {
   constructor(host, port) {
-    this.host = this.host;
-    this.port = this.port;
+    this.host = host;
+    this.port = port;
     this.client = MQTT.connect(`mqtt://${host}:${port}`);
   }
 
